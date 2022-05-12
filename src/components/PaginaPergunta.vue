@@ -3,7 +3,7 @@ export default {};
 </script>
 <template>
   <Article class="bloco-pergunta">
-    <div class="pergunta">Pergunta</div>
+    <div class="pergunta">Pergunta!!!</div>
     <div class="botoes-perguntas">
       <button>pergunta</button>
       <button>pergunta</button>
