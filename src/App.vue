@@ -9,8 +9,8 @@ export default {
 };
 </script>
 <template>
-  <!-- <PaginaAbertura /> -->
+ <!--<PaginaAbertura /> -->
   <PaginaPergunta />
-  <!-- <PrincipalContent /> -->
+  <!--<PrincipalContent /> -->
 </template>
 <style></style>

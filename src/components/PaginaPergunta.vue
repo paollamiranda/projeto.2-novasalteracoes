@@ -1,14 +1,23 @@
 <script>
-export default {};
+export default {
+   data() {
+    return {
+      logo: new URL("./img/logo.jpeg", import.meta.url).href,
+      };
+  },
+};
 </script>
 <template>
+  <header class="logo">
+   <div class="header-img-logo">
+     <img :src="logo" alt="">
+   </div>
+ </header>
+
   <Article class="bloco-pergunta">
     <div class="pergunta">Pergunta!!!</div>
     <div class="botoes-perguntas">
-      <button>pergunta</button>
-      <button>pergunta</button>
-      <button>pergunta</button>
-      <button>pergunta</button>
+      
     </div>
   </Article>
 </template>

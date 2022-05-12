@@ -2,34 +2,54 @@
 export default {
   data() {
     return {
-      imagem: [new URL("./img/modelo.jpg", import.meta.url).href],
+      logo: new URL("./img/logo.jpeg", import.meta.url).href,
+      imagem: new URL("./img/modelo.jpg", import.meta.url).href,
     };
   },
 };
 </script>
 
 <template>
-  <header id="header" class="header">
+ <header class="logo">
+   <div class="header-img-logo">
+     <img :src="logo" alt="">
+   </div>
+ </header>
+
+  <main id="main" class="main">
     <div class="texto-botao">
-      <h1 class="texto-header">Faça seu teste agora</h1>
-      <button class="botao-header">Começar</button>
+      <h1 class="texto-main">Faça seu teste agora</h1>
+      <button class="botao-main">Começar</button>
     </div>
-    <div class="img-header">
-      <img :src="imagem[0]" alt="" />
+    <div class="img-main">
+      <img :src="imagem" alt="" />
     </div>
-  </header>
+  </main>
 </template>
 
 <style>
-.header {
+.header.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-img-logo img{
+  width: 300px;
+  height: 80px;
+  align-items: center;
+  padding: 40px 0 5px 0;
+  margin-left:300px;
+}
+.main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
-.texto-header {
+.texto-main {
   font-size: 5em;
 }
-.botao-header {
+.botao-main {
   display: flex;
   background-color: black;
   color: white;
@@ -41,11 +61,11 @@ export default {
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
-.botao-header:hover {
+.botao-main:hover {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
 }
-.img-header {
+.img-main {
   display: block;
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
