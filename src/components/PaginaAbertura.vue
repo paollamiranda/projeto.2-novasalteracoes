@@ -22,7 +22,7 @@ export default {
       <button class="botao-main">Começar</button>
     </div>
     <div class="img-main">
-      <img :src="imagem" alt="" />
+      <img :src="imagem" alt="">
     </div>
   </main>
 </template>

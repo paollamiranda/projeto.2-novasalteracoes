@@ -7,12 +7,12 @@ import PaginaIntroducao from "./components/PaginaIntroducao.vue";
 // import PrincipalContent from "./components/PrincipalContent.vue";
 
 export default {
-  components: { PaginaAbertura, PaginaPergunta, PaginaIntroduÃ, Ã, o, PaginaIntroducao },
+  components: { PaginaAbertura, PaginaPergunta, PaginaIntroducao },
 };
 </script>
 <template>
-  <!-- <PaginaAbertura /> -->
-  <PaginaPergunta />
+   <PaginaAbertura /> 
+  <!-- <PaginaPergunta /> -->
   <!-- <PaginaIntroducao /> -->
 </template>
 <style></style>
