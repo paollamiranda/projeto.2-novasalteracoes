@@ -1,24 +1,22 @@
 <script>
 export default {
-   data() {
+  data() {
     return {
-      logo: new URL("./img/logo.jpeg", import.meta.url).href,
-      };
+      logo: new URL("./img/logo.1.png", import.meta.url).href,
+    };
   },
 };
 </script>
 <template>
   <header class="logo">
-   <div class="header-img-logo">
-     <img :src="logo" alt="">
-   </div>
- </header>
+    <div class="header-img-logo">
+      <img :src="logo" alt="" />
+    </div>
+  </header>
 
   <Article class="bloco-pergunta">
-    <div class="pergunta">Pergunta!!!</div>
-    <div class="botoes-perguntas">
-      
-    </div>
+    <div class="pergunta">Pergunta</div>
+    <div class="botoes-perguntas"></div>
   </Article>
 </template>
 
@@ -28,33 +26,34 @@ export default {
   /* height: 300px; */
   border: 1px solid rgb(0, 0, 0);
   border-radius: 15px;
-  padding: 60px;
-  margin: 50px;
+  padding-right: 30px;
+  margin: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .bloco-pergunta .pergunta {
-  background-color: #c4c4c4;
-  border-radius: 50px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 400px;
+  margin-top: 15px;
   width: 60%;
-  padding: 15px;
+  padding: 10px;
   font-weight: bolder;
   text-align: center;
   font-size: 1.9em;
 }
+
 .bloco-pergunta .botoes-perguntas {
-  background-color: #c4c4c4;
+ border: 1px solid rgb(0, 0, 0);
   border-radius: 10px;
   width: 100%;
   padding: 60px;
   margin: 40px 0;
-
 }
 
 .bloco-pergunta .botoes-perguntas {
   display: flex;
-  background-color: #c4c4c4;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 20px;
   padding-top: 10px;
   padding-bottom: 8px;

@@ -2,19 +2,19 @@
 export default {
   data() {
     return {
-      logo: new URL("./img/logo.jpeg", import.meta.url).href,
-      imagem: new URL("./img/modelo.jpg", import.meta.url).href,
+      logo: new URL("./img/logo.1.png", import.meta.url).href,
+      imagem: new URL("./img/modelo.ini-2.png", import.meta.url).href,
     };
   },
 };
 </script>
 
 <template>
- <header class="logo">
-   <div class="header-img-logo">
-     <img :src="logo" alt="">
-   </div>
- </header>
+  <header class="logo">
+    <div class="header-img-logo">
+      <img :src="logo" alt="" />
+    </div>
+  </header>
 
   <main id="main" class="main">
     <div class="texto-botao">
@@ -28,26 +28,31 @@ export default {
 </template>
 
 <style>
-.header.logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.header.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.header-img-logo img{
-  width: 300px;
+.header-img-logo img {
+  width: 200px;
   height: 80px;
   align-items: center;
   padding: 40px 0 5px 0;
-  margin-left:300px;
+  margin-left: 300px;
 }
 .main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 .texto-main {
-  font-size: 5em;
+  font-size: 4em;
+  padding-right: 50px;
+}
+.img-main{
+  width: 330px;
+  height: 340px;
+  padding-top: 50px;
 }
 .botao-main {
   display: flex;
@@ -65,8 +70,5 @@ export default {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
 }
-.img-main {
-  display: block;
-  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+
 </style>
