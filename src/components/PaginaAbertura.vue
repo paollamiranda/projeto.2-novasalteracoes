@@ -10,49 +10,31 @@ export default {
 </script>
 
 <template>
-  <header class="logo">
-    <div class="header-img-logo">
-      <img :src="logo" alt="" />
-    </div>
-  </header>
-
   <main id="main" class="main">
     <div class="texto-botao">
       <h1 class="texto-main">Faça seu teste agora</h1>
       <button class="botao-main">Começar</button>
     </div>
     <div class="img-main">
-      <img :src="imagem" alt="">
+      <img :src="imagem" alt="" />
     </div>
   </main>
 </template>
 
 <style>
-.header.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.header-img-logo img {
-  width: 200px;
-  height: 80px;
-  align-items: center;
-  padding: 40px 0 5px 0;
-  margin-left: 300px;
-}
 .main {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .texto-main {
-  font-size: 4em;
-  padding-right: 50px;
+  font-size: 5em;
 }
-.img-main{
+.img-main {
   width: 330px;
   height: 340px;
-  padding-top: 50px;
+  padding-top: 100px;
+  padding-right: 350px;
 }
 .botao-main {
   display: flex;
@@ -70,5 +52,4 @@ export default {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
 }
-
 </style>

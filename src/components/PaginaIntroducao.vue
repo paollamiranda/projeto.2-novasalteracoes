@@ -9,11 +9,10 @@ export default {
 </script>
 <template>
   <main id="texto-int" class="main">
-    <h1>texto de introdução para o quiz(explicando sobre o que é o quiz,e quais os tipos de estilo)</h1>
+    <h1>
+      texto de introdução para o quiz(explicando sobre o que é o quiz,e quais os
+      tipos de estilo)
+    </h1>
   </main>
 </template>
-<style>
-.texto-int{
-  
-}
-</style>
+<style></style>

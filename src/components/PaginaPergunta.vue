@@ -16,7 +16,8 @@ export default {
 
   <Article class="bloco-pergunta">
     <div class="pergunta">Pergunta</div>
-    <div class="botoes-perguntas"></div>
+    <button class="botoes-perguntas"> sla qualquer pergunta</button>
+
   </Article>
 </template>
 
@@ -28,6 +29,7 @@ export default {
   border-radius: 15px;
   padding-right: 30px;
   margin: 40px;
+  margin-left: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,15 +38,16 @@ export default {
   border: 1px solid rgb(0, 0, 0);
   border-radius: 400px;
   margin-top: 15px;
+  margin-left: px;
   width: 60%;
   padding: 10px;
   font-weight: bolder;
   text-align: center;
-  font-size: 1.9em;
+  font-size: 2em;
 }
 
 .bloco-pergunta .botoes-perguntas {
- border: 1px solid rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 10px;
   width: 100%;
   padding: 60px;
@@ -58,7 +61,7 @@ export default {
   padding-top: 10px;
   padding-bottom: 8px;
   padding-left: 20px;
-  width: 60%;
+  width: 80%;
 }
 .botoes-perguntas button {
   background-color: black;
